@@ -1,0 +1,108 @@
+
+.excursion {
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (max-width: 767px) {
+        padding-top: 45px;
+    }
+    @media (max-width: 539px) {
+        padding-top: 35px;
+    }
+    & .swiper-wrapper {
+        height: fit-content;
+    }
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 12px;
+        @media (max-width: 539px) {
+            margin-bottom: 6px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 42px;
+        @media (max-width: 539px) {
+            margin-bottom: 22px;
+        }
+    }
+
+    &__swiper-w {
+    }
+
+    &__swiper-prev {
+        left: 0;
+    }
+
+    &__swiper-btn {
+        position: absolute;
+        top: 50%;
+        transform: translate(0,-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+        border: 2px solid rgba(25, 101, 124, 1);
+        @media (max-width: 539px) {
+            display: none;
+        }
+    }
+
+    &__swiper-next {
+        right: 0;
+        & img {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__swiper {
+        border-radius: 5px;
+    }
+
+    &__slide {
+        height: auto;
+        & .excursion__card {
+            height: 100%;
+        }
+    }
+
+    &__article {
+        align-items: center;
+        gap: 8px;
+        display: none;
+        color: #19657C;
+        font-family: Montserrat;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 11px;
+        @media (max-width: 539px) {
+            display: flex;
+        }
+    }
+}
+
+.excursion__swiper-w {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1160px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 60px;
+    @media (max-width: 1023px) {
+        padding-bottom: 40px;
+    }
+    @media (max-width: 899px) {
+        padding-bottom: 20px;
+    }
+    @media (max-width: 539px) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

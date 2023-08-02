@@ -1,0 +1,3 @@
+# Festival
+npm i,
+gulp

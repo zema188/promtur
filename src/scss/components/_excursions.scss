@@ -1,0 +1,25 @@
+.excursions {
+
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        padding-bottom: 20px;
+        & span {
+            border-radius: 27px;
+            padding: 6px 19px;
+            color: rgba(25, 101, 124, 0.80);
+            font-size: 10.098px;
+            font-weight: 500;
+            cursor: auto;
+        }
+    }
+
+    &__title {
+    }
+}
+.company {
+    & .excursions__top {
+        padding-bottom: 10px;
+    }
+}

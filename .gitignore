@@ -1,0 +1,11 @@
+node_modules/
+dist/
+
+# Ignore dependencies installed with NPM
+npm-debug.log
+/node_modules
+npm-shrinkwrap.json
+
+# Ignore dependencies installed with Yarn
+yarn-error.log
+yarn.lock

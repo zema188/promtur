@@ -1,0 +1,12 @@
+.catalog {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    &__sort {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+    }
+}

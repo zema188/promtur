@@ -1,0 +1,187 @@
+.preview {
+    position: relative;
+    &__content {
+        display: flex;
+        padding-top: 106px;
+        padding-bottom: 137px;
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 90px;
+        padding-right: 15px;
+        @media (max-width: 1023px) {
+            flex-wrap: wrap;
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 0px;
+        }
+        @media (max-width: 767px) {
+            padding-top: 50px;
+        }
+        @media (max-width: 539px) {
+            padding-top: 32px;
+        }
+    }
+    & .airplane {
+        position: absolute;
+        right: 0px;
+        top: 50px;
+        width: 263px;
+        display: none;
+        @media (max-width: 1023px) {
+            display: block;
+        }
+        @media (max-width: 767px) {
+            top: 20px;
+        }
+        @media (max-width: 539px) {
+            top: 4px;
+            width: 120px;
+        }
+    }
+    &__text {
+        position: relative;
+        z-index: 2;
+        @media (max-width: 1023px) {
+            flex: 0 0 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 539px) {
+            margin-bottom: 20px;
+        }
+        & h1 {
+            color: #19657C;
+            font-family: Rubik One;
+            font-size: 82px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            @media (max-width: 1023px) {
+                text-align: center;
+            }
+            @media (max-width: 767px) {
+                font-size: 70px;
+            }
+            @media (max-width: 539px) {
+                font-size: 40px;
+                margin-bottom: 5px;
+            }
+        }
+        & h2 {
+            color: #6FB590;
+            font-family: Rubik One;
+            font-size: 38.811px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 15px;
+            @media (max-width: 1023px) {
+                text-align: center;
+            }
+            @media (max-width: 767px) {
+                font-size: 30px;
+            }
+            @media (max-width: 539px) {
+                font-size: 24px;
+                margin-bottom: 13px;
+            }
+        }
+    }
+
+    &__text-lead {
+        font-weight: 500;
+        max-width: 360px;
+        margin-bottom: 26px;
+        @media (max-width: 1023px) {
+            text-align: center;
+        }
+        @media (max-width: 539px) {
+            max-width: 260px;
+            color: #1C4050;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__text-points {
+        margin-bottom: 20px;
+        @media (max-width: 539px) {
+            margin-bottom: 13px;
+        }
+    }
+
+    &__text-btn {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        & span {
+            color: #FFF;
+            font-family: Rubik One;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 16px 41px;
+            @media (max-width: 539px) {
+                font-size: 14px;
+                padding: 13px 32px;
+            }
+        }
+        & img {
+            @media (max-width: 1023px) {
+                display: none;
+            }
+        }
+    }
+
+    &__pic {
+        position: absolute;
+        right: 0px;
+        bottom: -19px;
+        width: 64%;
+        @media (max-width: 1023px) {
+            position: static;
+            width: 100%;
+            bottom: auto;
+            right: auto;
+            margin-bottom: -1px;
+        }
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__line {
+        height: 19px;
+        width: 100%;
+        background: var(--var-green);
+        z-index: 2;
+        position: relative;
+        @media (max-width: 539px) {
+            background: var(--var-lite-green);
+            height: 8px;
+        }
+    }
+    & .curved-top {
+        left: 0;
+        top: 0;
+    }
+    & .curved-right {
+        right: 0;
+        top: 0;
+    }
+    & .curved-left {
+        left: 0;
+        bottom: -155px;
+    }
+}

@@ -1,0 +1,130 @@
+.about {
+    padding-top: 75px;
+    @media (max-width: 1023px) {
+        padding-top: 40px;
+    }
+    @media (max-width: 899px) {
+        padding-top: 52px;
+    }
+    &__content {
+        display: flex;
+        gap: 20px;
+        @media (max-width: 1023px) {
+            align-items: center;
+        }
+    }
+
+    &__content-text {
+        flex: 0 0 53%;
+        @media (max-width: 899px) {
+            flex: 0 0 100%;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 12px;
+        @media (max-width: 899px) {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 6px;
+        @media (max-width: 899px) {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__lead {
+        color: rgba(25, 101, 124, 0.80);
+        font-size: 14px;
+        font-weight: 500;
+        padding-right: 20px;
+        margin-bottom: 23px;
+        @media (max-width: 899px) {
+            text-align: center;
+        }
+        @media (max-width: 539px) {
+            display: none;
+        }
+    }
+
+    &__achievements-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        padding-right: 10px;
+        margin-bottom: 30px;
+        @media (max-width: 899px) {
+            justify-content: center;
+            padding-right: 0px;
+        }
+        @media (max-width: 539px) {
+            flex-direction: column;
+            gap: 7px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__achievements-item {
+        flex: 0 0 calc(33.33% - 10px);
+        border-radius: 17px;
+        border: 1px solid rgba(25, 101, 124, 0.60);
+        background: #FFF;
+        padding: 27px 22px;
+        max-width: 136px;
+        @media (max-width: 539px) {
+            flex: 0 0 100%;
+            max-width: none;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding: 12px 0 12px 22px;
+        }
+        & span {
+            color: rgba(25, 101, 124, 0.50);
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: block;
+            @media (max-width: 539px) {
+                margin-bottom: 0;
+                font-size: 26px;
+                font-weight: 600;
+                width: 67px;
+            }
+        }
+        & p {
+            color: rgba(137, 137, 137, 0.80);
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+
+    &__btn {
+        color: #FFF;
+        font-family: Rubik One;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 17px 42px;
+        @media (max-width: 899px) {
+            margin: 0 auto;
+        }
+        @media (max-width: 539px) {
+            font-size: 14px;
+            padding: 13px 30px;
+        }
+
+    }
+
+    &__content-pic {
+        @media (max-width: 899px) {
+            display: none;
+        }
+        & img {
+            width: 100%;
+        }
+    }
+}

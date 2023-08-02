@@ -1,0 +1,14 @@
+.navigation {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    &__item {
+        color: rgba(25, 101, 124, 0.60);
+        font-size: 12px;
+        font-weight: 500;
+        &:last-child {
+            color: rgba(25, 101, 124, 0.80);
+        }
+    }
+}
