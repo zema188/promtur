@@ -12,51 +12,53 @@
 <body>	
 	<div class="wrapper">
 		@@include("./header.html", {})
-		<div class="auth">
-			<div class="auth__content">
-				<div class="auth__top">
-					<span>
-						Уже есть аккаунт?
-					</span>
-					<a href="authorization.html" class="auth__top-btn btn btn_blue">
-						Войти
-					</a>
-				</div>
-				<div class="auth__title">
-					Регистрация
-				</div>
-				<div class="popup__label-list">
-					<label class="popup__label-list-item">
+		<main class="main-auth">
+			<div class="auth">
+				<div class="auth__content">
+					<div class="auth__top">
 						<span>
-							Логин (почта)
+							Уже есть аккаунт?
 						</span>
-						<input>
-					</label>
-					<label class="popup__label-list-item input-password-w">
-						<span>
-							Логин (почта)
-						</span>
-						<img class="eye eye_close" src="./img/icons/eye.svg" alt="скрыть пароль">
-						<img class="eye eye_open active" src="./img/icons/eye-close.svg" alt="показать пароль">
-						<input type="password">
-					</label>
-				</div>
-				<button class="auth__btn btn btn_green">
-					Создать аккаунт
-				</button>
-				<div class="auth__ways">
-					<div class="auth__ways-item">
-						<img src="./img/icons/yandex.svg" alt="яндекс">
+						<a href="authorization.html" class="auth__top-btn btn btn_blue">
+							Войти
+						</a>
 					</div>
-					<div class="auth__ways-item">
-						<img src="./img/icons/google.svg" alt="гугл">
+					<div class="auth__title">
+						Регистрация
 					</div>
-					<div class="auth__ways-item">
-						<img src="./img/icons/apple.svg" alt="эпл">
+					<div class="popup__label-list">
+						<label class="popup__label-list-item">
+							<span>
+								Логин (почта)
+							</span>
+							<input>
+						</label>
+						<label class="popup__label-list-item input-password-w">
+							<span>
+								Пароль
+							</span>
+							<img class="eye eye_close" src="./img/icons/eye.svg" alt="скрыть пароль">
+							<img class="eye eye_open active" src="./img/icons/eye-close.svg" alt="показать пароль">
+							<input type="password">
+						</label>
+					</div>
+					<button class="auth__btn btn btn_green">
+						Создать аккаунт
+					</button>
+					<div class="auth__ways">
+						<div class="auth__ways-item">
+							<img src="./img/icons/yandex.svg" alt="яндекс">
+						</div>
+						<div class="auth__ways-item">
+							<img src="./img/icons/google.svg" alt="гугл">
+						</div>
+						<div class="auth__ways-item">
+							<img src="./img/icons/apple.svg" alt="эпл">
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 		@@include("./footer.html", {})
 	</div>
 	<script src="js/jquery.js"></script>

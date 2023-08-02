@@ -13,6 +13,9 @@
     transform: translate(0, -50%);
     cursor: pointer;
     display: none;
+    @media (max-width: 539px) {
+        right: 12px;
+    }
     &::after {
         content: "";
         width: 30px;
@@ -82,6 +85,9 @@
 
 .dropdown-input__title {
     padding: 8px 12px 12px;
+    @media (max-width: 539px) {
+        padding: 8px 12px 6px;
+    }
 }
 input[type="date"] {
     position: relative;
@@ -109,6 +115,9 @@ input[type="date"]::-webkit-clear-button {
         padding: 8px 12px 31px;
         cursor: pointer;
         position: relative;
+        @media (max-width: 539px) {
+            padding: 8px 12px 27px;
+        }
     }
     & input {
         position: absolute;

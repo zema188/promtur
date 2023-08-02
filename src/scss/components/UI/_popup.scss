@@ -33,7 +33,8 @@
         text-transform: capitalize;
         margin-bottom: 24px;
         @media (max-width: 539px) {
-
+            font-size: 26px;
+            margin-bottom: 10px;
         }
     }
     & input {
@@ -59,7 +60,7 @@
     max-width: 562px;
     z-index: 105;
     @media (max-width: 539px) {
-        padding: 20px 20px 38px;
+        padding: 20px 15px 38px;
     }
   }
   .popup__body {
@@ -102,11 +103,16 @@
     line-height: normal;
     padding: 15px 63px;
     margin: 0 auto;
+    @media (max-width: 539px) {
+        padding: 13px 34px;
+        font-size: 13px;
+    }
 }
 .popup {
 
     &__label-list {
         padding-bottom: 10px;
+
     }
 
     &__label-list-item {
@@ -116,6 +122,9 @@
         background: #FFF;
         padding: 8px 12px 12px;
         display: block;
+        @media (max-width: 539px) {
+            padding: 8px 12px 6px;
+        }
         &:not(:last-child) {
             margin-bottom: 10px;
         }
@@ -128,6 +137,11 @@
             line-height: normal;
             display: block;
             margin-bottom: 5px;
+            @media (max-width: 539px) {
+                font-size: 8px;
+                font-weight: 500;
+                margin-bottom: 1px;
+            }
         }
         & input {
             color: rgba(25, 101, 124, 0.80);
@@ -136,6 +150,9 @@
             font-style: normal;
             font-weight: 500;
             line-height: normal;
+            @media (max-width: 539px) {
+                font-size: 12px;
+            }
             &::placeholder {
                 font-size: 14px;
                 color: rgba(25, 101, 124, 0.60);
@@ -167,16 +184,20 @@
 
 .number-seats {
     display: flex;
-    gap: 22px;
+    gap: 23px;
     align-items: center;
     & .popup__label-list-item {
-        flex: 0 0 calc(50% - 11px);
+        flex: 0 0 50%;
+        margin-bottom: 0px;
     }
 }
 .number-seats__info {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    @media (max-width: 539px) {
+        gap: 4px;
+    }
 }
 .number-seats__info-item {
     color: rgba(25, 101, 124, 0.60);

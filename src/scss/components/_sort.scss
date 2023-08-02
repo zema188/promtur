@@ -1,5 +1,10 @@
 .sort {
     position: relative;
+    & picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     &.active {
         & .sort__list {
             display: block;
@@ -24,6 +29,9 @@
         border: 1px solid #97979765;
         max-height: 200px;
         overflow: auto;
+        @media (max-width: 539px) {
+            padding: 2px 0px;
+        }
     }
 
     &__list-item {
@@ -31,6 +39,10 @@
         padding: 7px 7px 7px 7px;
         font-size: 15px;
         cursor: pointer;
+        @media (max-width: 539px) {
+            font-size: 10px;
+            padding: 2px 5px 2px 4px;
+        }
     }
 
     &__title {
@@ -47,6 +59,11 @@
     font-weight: 600;
     line-height: normal;
     gap: 10px;
+    @media (max-width: 539px) {
+        padding: 8px 19px;
+        font-size: 7.601px;
+        gap: 4px;
+    }
 }
 .catalog__title_blue-dark {
     padding: 14px 25px 14px 23px;
@@ -58,4 +75,9 @@
     font-weight: 600;
     line-height: normal;
     gap: 3px;
+    @media (max-width: 539px) {
+        padding: 8px 19px;
+        font-size: 7.601px;
+        gap: 4px;
+    }
 }

@@ -3,13 +3,19 @@
     padding-bottom: 60px;
     @media (max-width: 899px) {
         padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 36px;
+    }
+    @media (max-width: 767px) {
+        padding-top: 17px;
     }
     &__content {
         display: flex;
         gap: 20px;
         @media (max-width: 899px) {
             flex-wrap: wrap;
+        }
+        @media (max-width: 767px) {
+            gap: 0;
         }
     }
 
@@ -25,10 +31,20 @@
         background: #FFF;
         padding: 23px 23px 37px;
         margin-bottom: 12px;
+        position: relative;
         @media (max-width: 899px) {
             display: flex;
             gap: 16px;
             padding: 16px;
+        }
+        & .settings-mob {
+            display: none;
+            @media (max-width: 539px) {
+                display: block;
+                position: absolute;
+                right: 11px;
+                top: 10px;
+            }
         }
     }
 
@@ -36,6 +52,9 @@
         margin-bottom: 22px;
         @media (max-width: 899px) {
             margin-bottom: 0px;
+        }
+        @media (max-width: 767px) {
+            flex: 0 0 33%;
         }
         & img {
             width: 100%;
@@ -47,6 +66,12 @@
         font-size: 16px;
         font-weight: 600;
         margin-bottom: 8px;
+        @media (max-width: 539px) {
+            color: #19657C;
+            font-size: 10px;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
     }
 
     &__me-list {
@@ -61,8 +86,15 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        @media (max-width: 539px) {
+            font-size: 8px;
+            gap: 5px;
+        }
         &:not(:last-child) {
             margin-bottom: 10px;
+            @media (max-width: 539px) {
+                margin-bottom: 8px;
+            }
         }
         & .icon {
             width: 9px;
@@ -79,6 +111,9 @@
         @media (max-width: 899px) {
             flex-wrap: wrap;
             flex-direction: row;
+        }
+        @media (max-width: 539px) {
+            display: none;
         }
     }
 
@@ -116,6 +151,10 @@
         justify-content: space-between;
         align-items: center;
         padding: 38px 36px 20px;
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+            padding: 14px 14px 16px;
+        }
     }
 
     &__events-title {
@@ -125,9 +164,22 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        @media (max-width: 767px) {
+            width: 100%;
+            text-align: center;
+            order: 1;
+        }
+        @media (max-width: 539px) {
+            font-size: 18px;
+        }
     }
 
     &__events-sort {
+        @media (max-width: 767px) {
+            margin-left: auto;
+            margin-right: 0px;
+            margin-bottom: 12px;
+        }
     }
 
     &__sort-title {
@@ -141,11 +193,25 @@
         font-weight: 500;
         line-height: normal;
         cursor: pointer;
+        @media (max-width: 539px) {
+            font-size: 7px;
+        }
         & span {
             cursor: pointer;
         }
         & svg {
             cursor: pointer;
+        }
+        & .arrow-pc {
+            @media (max-width: 539px) {
+                display: none;
+            }
+        }
+        & .arrow-mob {
+            display: none;
+            @media (max-width: 539px) {
+                display: block;
+            }
         }
     }
 
@@ -157,21 +223,51 @@
         padding: 28px 36px;
         justify-content: space-between;
         gap: 10px;
+        @media (max-width: 767px) {
+            padding: 10px 11px;
+        }
         &:nth-child(odd) {
             background: rgba(25, 101, 124, 0.04);
         }
         & .excursion__card-hashtags {
             position: relative;
             left: auto;
+            @media (max-width: 539px) {
+                gap: 4px;
+            }
         }
+        & .excursion__card-hashtag {
+            @media (max-width: 539px) {
+                font-size: 5.172px;
+                font-weight: 600;
+                padding: 2px 4px;
+                & img {
+                    width: 7px;
+                    height: 7px;
+                }
+            }
+        }
+
     }
+
     &__events-item-side {
         display: flex;
         gap: 20px;
         align-items: center;
+        @media (max-width: 767px) {
+            align-items: flex-start;
+            gap: 7px;
+            flex: 1;
+        }
     }
     &__events-item-pic {
         flex: 0 0 105px;
+        @media (max-width: 767px) {
+            flex: 0 0 28%;
+        }
+        @media (max-width: 539px) {
+            flex: 0 0 25%;
+        }
         & img {
             width: 100%;
         }
@@ -186,6 +282,11 @@
         font-size: 14px;
         font-weight: 600;
         margin-bottom: 16px;
+        @media (max-width: 539px) {
+            font-size: 8px;
+            font-weight: 600;
+            margin-bottom: 9px;
+        }
     }
 
     &__events-item-date {
@@ -213,6 +314,9 @@
 
     &__events-bottom {
         padding: 29px 0px 20px;
+        @media (max-width: 539px) {
+            padding: 12px 0 17px;
+        }
     }
 
     &__events-more-btn {
@@ -221,5 +325,25 @@
         text-align: center;
         display: block;
         margin: 0 auto;
+        @media (max-width: 539px) {
+            color: #19657C;
+            font-size: 8px;
+            font-weight: 600;
+        }
+    }
+}
+.excursion__card-item-date-mob {
+    color: #19657C;
+    font-family: Montserrat;
+    font-weight: 500;
+    margin-top: 4px;
+    font-size: 12px;
+    gap: 7px;
+    display: none;
+    @media (max-width: 767px) {
+        display: flex;
+    }
+    @media (max-width: 539px) {
+        font-size: 8px;
     }
 }

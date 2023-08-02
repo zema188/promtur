@@ -3,6 +3,9 @@
     gap: 48px;
     &__text {
         flex: 0 0 45.3%;
+        @media (max-width: 899px) {
+            flex: 0 0 100%;
+        }
     }
 
     &__text-lead {
@@ -13,6 +16,10 @@
         font-weight: 500;
         line-height: normal;
         margin-bottom: 20px;
+        @media (max-width: 539px) {
+            font-size: 12px;
+            padding-top: 8px;
+        }
     }
 
     &__text-btn {
@@ -23,10 +30,18 @@
         font-weight: 400;
         line-height: normal;
         padding: 15px 38px;
+        @media (max-width: 899px) {
+            margin: 15px auto 0px;
+            font-size: 14px;
+            padding: 12px 28px;
+        }
     }
 
     &__side {
         padding-top: 10px;
+        @media (max-width: 899px) {
+            display: none;
+        }
     }
 
     &__side-preview {
@@ -82,5 +97,74 @@
             width: 100%;
             text-align: center;
         }
+    }
+}
+
+
+
+.company {
+
+    &__swiper {
+        border-radius: 5px;
+        display: none;
+        width: calc(100vw - 30px);
+        @media (max-width: 899px) {
+            display: block;
+        }
+    }
+
+    &__swiper-wrapper {
+    }
+
+    &__slide {
+        border-radius: 5px;
+        & img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    &__pagination {
+        display: none;
+        justify-content: center;
+        padding: 7px 0 5px;
+        @media (max-width: 899px) {
+            display: flex;  
+        }
+        &.swiper-pagination {
+            position: static;
+            & .swiper-pagination-bullet {
+                width: 6px;
+                height: 6px;
+                background: rgba(25, 101, 124, 1);
+                opacity: 1;
+                &.swiper-pagination-bullet-active {
+                    background: rgba(111, 181, 144, 1);
+                }
+            }
+        }
+    }
+
+    &__swiper-btns {
+        gap: 3px;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        display: none;
+        @media (max-width: 899px) {
+            display: flex;
+        }
+    }
+    
+    &__swiper-btn {
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+    }
+
+    &__prev {
+    }
+
+    &__next {
+        transform: rotate(180deg);
     }
 }

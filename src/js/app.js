@@ -47,7 +47,7 @@ for(let i=0 ; i < popupClose.length ; i++) {
         bodyScrollLock.enableBodyScroll(popup);
     })
 }
-//слайдер
+//слайдер на главной
 const excursionSwiper = new Swiper('.excursion__swiper', {
   speed: 400,
   spaceBetween: 20,
@@ -75,6 +75,26 @@ const excursionSwiper = new Swiper('.excursion__swiper', {
   }
 });
 
+//слайдер на главной
+const companySwiper = new Swiper('.company__swiper', {
+  speed: 400,
+  spaceBetween: 20,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.company__next',
+    prevEl: '.company__prev',
+  },
+  pagination: {
+    el: ".company__pagination",
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+  }
+});
 
 // открытие попапа записаться 
 if(document.querySelectorAll('.excursion__card-btn').length) {

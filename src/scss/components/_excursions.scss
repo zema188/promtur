@@ -5,6 +5,12 @@
         align-items: center;
         gap: 17px;
         padding-bottom: 20px;
+        @media (max-width: 539px) {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 2px;
+            padding-bottom: 13px;
+        }
         & span {
             border-radius: 27px;
             padding: 6px 19px;
@@ -12,10 +18,21 @@
             font-size: 10.098px;
             font-weight: 500;
             cursor: auto;
+            @media (max-width: 539px) {
+                padding: 6px 19px;
+                font-size: 8.098px;
+            }
         }
     }
 
     &__title {
+        @media (max-width: 539px) {
+            color: #19657C;
+            font-family: Rubik One;
+            font-size: 32px;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
     }
 }
 .company {
